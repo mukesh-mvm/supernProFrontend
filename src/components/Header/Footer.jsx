@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -6,7 +7,9 @@ export default function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Left Section - Logo and Address */}
         <div>
-          <h4 className="text-xl  font-bold text-blue-600 ">SupremPro</h4>
+          <Link href="/" className="text-white text-2xl font-bold hover:text-gray-200">
+          <img src="/Supoernprop Logo1.png" alt="logo" className='h-[60px]'/>
+        </Link>
           <p className="text-white text-sm mt-2">123 Business Street, City, Country</p>
           <p className=" text-white text-sm">Email: contact@yourcompany.com</p>
           <p className="text-white text-sm">Phone: +123 456 7890</p>

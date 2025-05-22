@@ -7,6 +7,7 @@ export async function generateStaticParams() {
      { slugName: "facts-about-atm-withdrawal-charges-for-banks" },
      { slugName: "credit-or-debit-card-rules_-benefits-for-customers" },
      { slugName: "here-is-how-govt-has-limited-gold-storage-at-home" },
+     { slugName: "leading-business-loan-options-for-indian-entrepreneurs-in-2025" },
     
    ];
  }
@@ -47,7 +48,7 @@ export async function generateStaticParams() {
      },
 
      {
-      id:1,
+      id:2,
       title:"Credit Or Debit Card Rules: Benefits For Customers",
       data:` <h1 class='heading-primary'>Credit/Debit Card Rules: Benefits For Customers</h1>
                   <h2  class='heading-secondary'>Change your card's network from VISA to MasterCard to RuPay or any other preferred network. Don't know How? Then check details Now. </h2>
@@ -66,7 +67,7 @@ export async function generateStaticParams() {
 
                          <p>In 2021, the RBI the Reserve Bank of India (RBI) imposed an indefinite prohibition on Mastercard, American Express, and Diners Club, preventing them from issuing fresh debit, credit, or prepaid cards to customers due to their failure to comply with rules regarding local data storage. However, in June 2022, the ban was lifted by the central bank after confirming that the companies had adhered to the regulations concerning the storage of payment data. </p>
                          
-                         <h4 className='sub-heading'>HOW CAN YOU PORT YOUR CARD NETWORK? </h4>
+                         <h4 class='sub-heading'>HOW CAN YOU PORT YOUR CARD NETWORK? </h4>
                           <ul class="numbered-list">
                              <li>Existing agreements at the time of amendment or renewal thereof, and </li>
                              <li>Fresh agreements executed from the date of this circular.  </li>
@@ -93,7 +94,7 @@ export async function generateStaticParams() {
                     <div class='content-container'>
                         <p>Do you know how much gold you can keep at home, because the government has set a limit on this. If you're buying gold jewellery, find out how much you can keep at home without tax issues and learn about the taxation of gold income. </p>
                         <p>The government has set certain rules for how much gold or gold ornaments you can keep at home (Gold limit in India as per income tax rules). It's important for everyone to follow these rules, but many people are unaware of the specified amount of gold allowed. Let us inform you about it. </p>
-                         <h4 className='sub-heading'>CBDT Regulations regarding Gold </h4>
+                         <h4 class='sub-heading'>CBDT Regulations regarding Gold </h4>
                          <p>Board of Direct Taxes (CBDT) has set rules about how much gold individuals can possess in the country. You are allowed to keep gold beyond this limit, but you must be able to explain where you obtained it from. The rules also state that officers cannot seize gold jewellery or ornaments found during a search at a house, if the quantity is below the specified limit or can be proven as legitimately sourced. </p>
                           <ul >
                              <li>Existing agreements at the time of amendment or renewal thereof, and </li>
@@ -109,6 +110,380 @@ export async function generateStaticParams() {
                         <p>Hence, it is important to retain sources of income from which heavy purchases of gold are made, since this could trigger queries from authorities.</p>
                     </div>   
       `
+     },
+     {
+      id:4,
+      title:"Leading Business Loan Options for Indian Entrepreneurs in 2025",
+      data:`
+                <h1 class='heading-primary1'>Leading Business Loan Options for Indian Entrepreneurs in 2025</h1>
+
+
+                <div class='blog-image-container'>
+                    <img src="/tech.webp" alt="" />
+                </div>
+
+
+                <p class='heading-secondary-para'>To assist aspiring business owners, Indian Market has launched a number of business loans.</p>
+                <p class='custom-text'>Explore these 5 best Business loans in India to upgrade your business game.</p>
+                <br />
+
+
+
+
+                <div class='content-container'>
+
+                    <h4 class='sub-heading'>1. Flexiloans business loan (4.5/5)</h4>
+
+
+                    <ul class="custom-list">
+                        <li>
+                            <p class="list-padding">
+                                Term loans, working capital loans, and POS-based loans are among the unsecured loan options offered by FlexiLoans.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                Up to ₹1 crore in quick and paperless loans are offered.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                It is renowned for offering women business owners and online retailers flexible, quick, and unique loans.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p class="list-padding">
+
+                        To explore the best offers from Flexiloans, hit the
+
+                        <button class='custom-button'>
+                            <a
+                                href="https://ads.affhexa.com/click?campaign_id=33298&pub_id=4513&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="custom-link"
+                            >
+                                Click Now
+                            </a>
+                        </button>
+
+
+
+
+                    </p>
+
+
+
+                </div>
+
+                <br />
+
+
+
+
+                <div class='content-container'>
+
+                    <h4 class='sub-heading'>2. Lendingkart business loan (4.7/5)</h4>
+
+
+                    <ul class="custom-list">
+                        <li>
+                            <p class="list-padding">
+                                This online lending platform is well-known for helping small firms that might not be eligible for traditional bank loans.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                They are known for providing loans to businesses with good digital banking history but poor credit.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                They offer Flexible repayment options with minimal documentation
+
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p class="list-padding">
+
+                        To explore the best offers from Lendingkart, Hit the
+
+                        <button class='custom-button'>
+                            <a
+                                href="https://spectrum.gotrackier.com/click?campaign_id=231&pub_id=375"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="custom-link "
+                            >
+                                Click Now
+                            </a>
+                        </button>
+
+
+
+
+
+                    </p>
+
+
+
+                </div>
+                <br />
+
+
+
+                <div class='content-container'>
+
+                    <h4 class='sub-heading'>3. indifi Business Loan (4.2/5)</h4>
+
+
+                    <ul class="custom-list">
+                        <li>
+                            <p class="list-padding">
+                                Indifi Business loan is known for providing sector-specific online loans.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                It provides ₹50 lakhs to ₹1 crore in business loans.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                In order to provide sector-specific funding, it collaborates with websites such as Amazon, Zomato, and Flipkart.
+
+                            </p>
+                        </li>
+                        <li>
+                            <p class="list-padding">
+                                It is ideal for firms in a certain field and offers rapid approval with little paperwork needed.
+
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p class="list-padding">
+
+                        To explore the best offers from indifi, Hit the
+
+                        <button class='custom-button'>
+                            <a
+                                href="http://www.intellectmedia.net/trk/click.asp?cid=2773&pid=46&did=20436&lid=36231&code=792"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="custom-link"
+                            >
+                                Click Now
+                            </a>
+                        </button>
+
+                    </p>
+
+
+
+                </div>
+                <br />
+
+
+
+                <div class='content-container'>
+
+                    <h4 class='sub-heading'>4. Tata Capital business loan (4.8/5)</h4>
+
+
+                    <ul class="custom-list">
+                        <li>
+                            <p class="list-padding">
+                                Tata Capital offers small and medium-sized businesses both secured and unsecured loans.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                It offers a substantial sum at the lowest interest rate.
+
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                Offers dependable businesses organized repayment and fair pricing.
+
+                            </p>
+                        </li>
+
+                    </ul>
+
+                    <p class="list-padding">
+
+                        To explore the best offers from Tata Capital, Hit the
+
+                        <button class='custom-button'>
+                            <a
+                                href="https://www.tatacapital.com/business-loan.html
+"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="custom-link "
+                            >
+                                Click Now
+                            </a>
+                        </button>
+
+
+                    </p>
+
+
+
+                </div>
+                <br />
+
+
+
+                <div class='content-container'>
+
+                    <h4 class='sub-heading'>5. IIFL Finance business loan (4.3/5)</h4>
+
+
+                    <ul class="custom-list">
+                        <li>
+                            <p class="list-padding">
+                                It is a hybrid model that offers online and offline assistance.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                It offers both secured and unsecured business loans, as well as flexible terms and a physical branch network.
+
+
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                It offers organized financing alternatives and reliable client service as well as extensive access to every business industry.
+
+
+                            </p>
+                        </li>
+                        <li>
+                            <p class="list-padding">
+                                It is also known for providing personalized assistance for loan structuring
+
+
+
+                            </p>
+                        </li>
+
+                    </ul>
+
+                    <p class="list-padding">
+
+                        To explore the best offers from IIFL, Hit the
+
+                        <button class='custom-button'>
+                            <a
+                                href="https://trackback.gotrackier.com/click?campaign_id=31167&pub_id=769&p1={your-transaction-id}&source={your-sub-aff-id}
+
+"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="custom-link "
+                            >
+                                Click Now
+                            </a>
+                        </button>
+
+
+                    </p>
+
+
+
+                </div>
+                <br />
+
+
+
+                <div class='content-container'>
+
+                    <h2 class='custom-heading'>Financial Tips for Getting the Best Business Loan in 2025
+                    </h2>
+
+
+                    <ul class="custom-list">
+                        <li>
+                            <p class="list-padding">
+                                Make sure your tax returns, income statements, and balance sheets are current.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                Establish the precise amount you require and its intended use, like company expansion, equipment acquisition, or operating capital.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="c">
+                                To maintain affordable monthly payments, don't take on more debt than you can afford.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                Make sure your company has enough cash flow to properly handle EMIs.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="list-padding">
+                                In the event of unforeseen company interruptions, have a contingency plan for debt repayment.
+                            </p>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+                <br />
+
+
+
+
+                <div class='content-container'>
+
+                    <h4 class='custom-heading'>Conclusion</h4>
+                    <p class="list-padding">
+                        In 2025, selecting the best business loan is essential to sustaining your company's expansion in the face of changing economic conditions and cutting-edge lending alternatives. Whether it's sector-specific finance from Indifi, rapid and flexible options from Flexiloans, digital-first MSMEs from Lendingkart, hybrid support from IIFL Finance, or reliable long-term solutions from Tata Capital, the top 5 business loans in India each address distinct demands.
+
+                    </p>
+                    <p class="list-padding">
+                        Make sure you choose the best option by carefully weighing your business objectives, loan terms, interest rates, and eligibility requirements before applying. You may confidently expand your firm and open up new chances with the correct loan.
+
+
+                    </p>
+
+
+                </div>
+`
+
      }
 
 
@@ -122,12 +497,12 @@ export async function generateStaticParams() {
   if(text){
      filterdata =  data.filter((item) => {
 
-      console.log(item?.title?.toLowerCase())
+      // console.log(item?.title?.toLowerCase())
       return item?.title?.toLowerCase() === text?.toLowerCase();
     });
 
-  console.log("filterdata",filterdata)
-  console.log(text)
+//   console.log("filterdata",filterdata)
+//   console.log(text)
   }
 
   

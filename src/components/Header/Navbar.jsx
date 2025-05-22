@@ -9,10 +9,10 @@ export default function Navbar() {
 
   return (
     <nav className="bg-gradient-to-r from-blue-600 to-indigo-700 shadow-lg">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 py-1 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-white text-2xl font-bold hover:text-gray-200">
-          MyLogo
+          <img src="/Supoernprop_Logo1-removebg-preview.png" alt="logo" className='h-[60px]'/>
         </Link>
 
         {/* Desktop Menu */}

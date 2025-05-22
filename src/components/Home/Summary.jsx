@@ -63,7 +63,7 @@ const data2 = [
                 <div  className='w-full p-4 flex flex-col md:flex-row items-center gap-10 shadow-md  '>
                     <img src={item.image} alt="" className=' rounded-2xl w-full md:w-[150px]' />
                     
-                    <Link href={`/${item?.base}/${item?.title.toLowerCase().replace(/ /g, "-").replace(/:/g, "_")}`}   className=' cursor-pointer hover:text-red-400 text-black text-2xl'>{item.title}</Link>
+                    <Link href={`/${item?.base}/${item?.title.toLowerCase().replace(/ /g, "-").replace(/:/g, "_")}`}   className=' cursor-pointer hover:text-red-400 text-black text-[20px]'>{item.title}</Link>
                  </div>
                         </>
                       )

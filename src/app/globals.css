@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,9 +22,10 @@
 }
 
 body {
-  background: var(--background);
+  background: white;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -36,11 +39,14 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 0.75rem; /* pt-3 → 3 * 0.25rem */
+  color: black;
+
 }
 
 .blog-image-container img {
   width: 90%;
   object-fit: cover;
+
 }
 
 
@@ -53,12 +59,21 @@ body {
   flex-direction: column;
   gap: 1rem; /* gap-4 → 4 * 0.25rem */
   padding-top: 1.25rem; /* pt-5 → 5 * 0.25rem */
+  color: black;
 }
 
 
 #artice-main .blog-image-container img {
   width: 90% !important;
   object-fit: cover;
+  height: 60vh;
+}
+
+@media (max-width:768px) {
+  #artice-main .blog-image-container img {
+  width: 100% !important;
+  height: auto;
+}
 }
 
 #artice-main .content-container {
@@ -71,7 +86,18 @@ body {
   flex-direction: column;
   gap: 1rem; /* gap-4 → 4 * 0.25rem */
   padding-top: 1.25rem; /* pt-5 → 5 * 0.25rem */
+  color: black;
 }
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 
 
 .heading-primary {
@@ -82,6 +108,7 @@ body {
   font-size: 1.875rem; /* text-3xl */
   text-align: center;
   font-weight: bold;
+  color: black;
 }
 
 .heading-secondary {
@@ -103,6 +130,7 @@ body {
   font-size: 1.875rem; /* text-3xl */
   text-align: justify;
   font-weight: bold;
+  color: black;
 }
 
 .heading-secondary1 {
@@ -127,8 +155,8 @@ body {
 
 .sub-heading{
   color: black;
-  font-size: 1.4rem; /* text-2xl */
-  font-weight: 500;
+  font-size: 20px; /* text-2xl */
+  font-weight: 700;
  
 }
 
@@ -144,16 +172,97 @@ body {
 
 .list-padding{
   padding-left: 20px;
+  font-size: 16px;
+  
 }
 
 .numbered-list {
   list-style-type: decimal; /* Use numbers instead of bullets */
   margin-left: 20px; /* Add some left margin for spacing */
   padding-left: 20px;
+  color: black;
 }
 
 .numbered-list li {
   margin-bottom: 5px; /* Add spacing between list items */
+}
+
+.custom-list {
+  list-style-type: disc;       /* Bullet points */
+  padding-left: 1.5rem;        /* Equivalent to pl-6 (24px) */
+}
+
+.custom-list li + li {
+  margin-top: 1rem;            /* Equivalent to space-y-4 (16px) */
+}
+
+
+.custom-heading {
+  text-align: center;   /* text-center */
+  font-size: 30px;      /* text-[30px] */
+  font-weight: 700;     /* font-bold */
+  color: black;
+}
+
+
+.custom-button {
+  margin-left: 5px;          /* ml-[5px] */
+  width: 100px;              /* w-[100px] */
+  padding: 5px;              /* p-[5px] */
+  background-color: #3b82f6; /* bg-blue-500 (Tailwind hex code) */
+  border-radius: 1rem;       /* rounded-2xl = 16px or 1rem */
+  color: white;              /* Optional: make text visible */
+  border: none;              /* Optional: remove default border */
+  cursor: pointer;           /* Optional: pointer on hover */
+}
+
+.custom-link {
+  color: white;              /* text-white */
+  font-weight: 600;          /* font-semibold */
+  margin-left: 0.25rem;      /* ml-1 (4px) */
+  text-decoration: none;     /* no-underline */
+  transition: color 0.2s ease; /* Smooth hover effect */
+}
+
+.custom-text {
+  width: 90%;             /* w-[90%] */
+  margin-left: auto;      /* mx-auto */
+  margin-right: auto;     /* mx-auto */
+  font-weight: 700;       /* font-bold */
+  font-size: 16px;  
+  color: black;      /* text-[16px] */
+}
+
+
+@media (max-width:768px) {
+
+  .content-container {
+  width: 95% ;
+  
+}
+
+.heading-primary1{
+  width: 100%;
+  text-align: center !important;
+}
+
+.heading-secondary-para{
+  width: 100%;
+}
+
+.sub-heading{
+  width: 100%;
+}
+
+.list-padding{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+#artice-main .content-container{
+  width: 100% !important;
+}
+  
 }
 
 
