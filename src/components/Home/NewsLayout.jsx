@@ -1,64 +1,112 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Link from 'next/link';
+import SimilarBlogs from './SimilarBlogs';
 
 const data1 = [
-    { id: 3, title: "Credit Or Debit Card Rules: Benefits For Customers", image: "/blog2.png",base:"finance" },
-  { id: 2, title: "Facts About ATM Withdrawal Charges For Banks", image: "/blog1.png",base:"finance" },
+    { id: 6, title: "Credit Or Debit Card Rules: Benefits For Customers", image: "/blog2.png",base:"finance" },
+    { id: 2, title: "Best Personal Loan Options for All Your Needs", image: "/personal_loan.webp",base:"finance" },
+    { id: 3, title: "Leading Business Loan Options for Indian Entrepreneurs in 2025", image: "/tech.webp",base:"finance" },
+  { id: 7, title: "Facts About ATM Withdrawal Charges For Banks", image: "/blog1.png",base:"finance" },
 
- { id: 4, title: "5 Reasons Why Too Much Sugar Is Bad For You", image: "/blog4.png",base:"fashion-lifestyle" },
- {id:1,title:"Here is how Govt Has Limited Gold Storage at Home",image:"/blog3.png",base:"finance"},
+ { id: 5, title: "5 Reasons Why Too Much Sugar Is Bad For You", image: "/blog4.png",base:"fashion-lifestyle" },
+ { id: 1, title: "How to use Copilot Vision", image: "/copilotVision.webp",base:"fashion-lifestyle" },
+ {id:4,title:"Here is how Govt Has Limited Gold Storage at Home",image:"/blog3.png",base:"finance"},
 ]
 
 export default function NewsLayout() {
   const [trendingProperties] = useState(data1);
 
   return (
-    <div className="container mx-auto p-6 flex flex-col md:flex-row gap-6">
-      {/* Latest News */}
-      <aside className="w-full md:w-1/5 bg-gray-100 p-4 rounded-lg shadow-md">
-        <h2 className="text-lg font-bold mb-4">Latest News</h2>
-        <ul className="space-y-3">
-          <li className="border-b pb-2">Breaking: Market hits all-time high</li>
-          <li className="border-b pb-2">Politics: New policies announced</li>
-          <li className="border-b pb-2">Sports: Championship finals highlights</li>
-          <li className="border-b pb-2">Tech: New smartphone released</li>
-        </ul>
-      </aside>
+    <div className=" mx-auto p-4 flex flex-col md:flex-row gap-6 ">
+     <SimilarBlogs/>
 
-      {/* Trending Properties */}
-      <main className="w-full md:w-3/5 bg-white p-4 rounded-lg shadow-md">
+      <main className="w-full md:w-3/5  p-2 rounded-lg ">
         <h2 className="text-lg font-bold mb-4">Trending Topics</h2>
-        <Carousel showThumbs={false} autoPlay infiniteLoop>
-          {trendingProperties.map((property, index) => (
+ <Carousel
+  showThumbs={false}
+  showArrows={false}
+  autoPlay
+  infiniteLoop
+  renderIndicator={(onClickHandler, isSelected, index, label) => {
+    const className = isSelected
+      ? 'inline-block w-3 h-3 bg-gray-800 rounded-full mx-1'
+      : 'inline-block w-3 h-3 bg-gray-600 rounded-full mx-1 cursor-pointer';
+    return (
+      <span
+        key={index}
+        className={className}
+        onClick={onClickHandler}
+        onKeyDown={onClickHandler}
+        role="button"
+        tabIndex={0}
+        aria-label={`${label} ${index + 1}`}
+      />
+    );
+  }}
+>
+  {trendingProperties
+    ?.slice()
+    .sort((a, b) => a.id - b.id)
+    .map((property) => (
+      <Link
+        key={property.id}
+        href={`/${property.base}/${property.title
+          .toLowerCase()
+          .replace(/ /g, "-")
+          .replace(/:/g, "_")}`}
+      >
+         <h3 className="cursor-pointer hover:text-[#5E3B5E] text-[#4F1C51] font-bold  text-[28px]  w-fit mx-auto">
+            {property.title}
+          </h3>
+        <div className="w-full relative">
+          {/* Image container */}
+          <div className="relative w-full h-96">
+            <img
+              src={property.image}
+              alt={property.title}
+              className="w-full h-full object-cover rounded-lg"
+            />
 
-             <Link href={`/${property?.base}/${property?.title.toLowerCase().replace(/ /g, "-").replace(/:/g, "_")}`}>
-            <div key={index} className="relative w-full h-96">
-              <h3 className=" cursor-pointer hover:text-red-300 absolute top-4 left-4 bg-black text-white px-3 py-1 rounded-lg text-sm z-10">
-                
-               
-                   {property.title}
-                
-              </h3>
-              <img src={property.image} alt={property.title} className="w-full h-full object-cover rounded-lg" />
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+              <style jsx>{`
+                :global(.carousel .control-dots) {
+                  
+                  display: flex;
+                  justify-content: center;
+                }
+              `}</style>
             </div>
+          </div>
 
-            </Link>
-          ))}
-        </Carousel>
+         
+        </div>
+      </Link>
+    ))}
+</Carousel>
+
+
+
+
       </main>
 
       {/* Advertisement */}
-      <aside className="w-full md:w-1/5 bg-gray-200 p-4 rounded-lg shadow-md text-center">
-        <h2 className="text-lg font-bold mb-4">Advertisement</h2>
-        <div className="bg-gray-300 h-40 flex items-center justify-center rounded-lg">
-          Ad Banner
-        </div>
-      </aside>
+    <aside className="w-full md:w-1/5   rounded-lg  text-center">
+
+  <div className="flex flex-col gap-2">
+        <img
+          src="https://mvmbs.com/images/tata_side_image.webp"
+          alt="Tata Neu Event"
+          className="w-full h-[480px]  object-cover rounded-md"
+        />
+
+   
+  </div>
+</aside>
+
     </div>
   );
 }

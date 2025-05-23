@@ -1,38 +1,32 @@
-
-import Article from "@/components/Article/Article"
-
+import Article from "@/components/Article/Article";
 
 export async function generateStaticParams() {
-   return [
-     { slugName: "facts-about-atm-withdrawal-charges-for-banks" },
-     { slugName: "credit-or-debit-card-rules_-benefits-for-customers" },
-     { slugName: "here-is-how-govt-has-limited-gold-storage-at-home" },
-     { slugName: "leading-business-loan-options-for-indian-entrepreneurs-in-2025" },
-    
-   ];
- }
+  return [
+    { slugName: "facts-about-atm-withdrawal-charges-for-banks" },
+    { slugName: "credit-or-debit-card-rules_-benefits-for-customers" },
+    { slugName: "here-is-how-govt-has-limited-gold-storage-at-home" },
+    { slugName: "best-personal-loan-options-for-all-your-needs" },
+    {
+      slugName:
+        "leading-business-loan-options-for-indian-entrepreneurs-in-2025",
+    },
+  ];
+}
 
-
- const page = async({params}) => {
-
-  
-
-  // Convert slug to normal text (replace dashes with spaces)
-  const {slugName} = await params
-  const text = slugName?.replace(/-/g, " ").replace(/_/g, ":")
-  
+const page = async ({ params }) => {
+  const { slugName } = await params;
+  const text = slugName?.replace(/-/g, " ").replace(/_/g, ":");
 
   const data = [
-     {
-      id:1,
-      title:"Facts About ATM Withdrawal Charges For Banks",
-      data:` 
+    {
+      id: 1,
+      title: "Facts About ATM Withdrawal Charges For Banks",
+      data: ` 
       <h1 class='heading-primary'>Facts About ATM Withdrawal Charges For Banks</h1>
       <h2  class='heading-secondary'>Check the ATM Transaction Limits and Charges of your bank. </h2>
       <div class='blog-image-container'>
                      <img src="/blog1.png" alt="" />
                    </div>
-
                     <div class='content-container'>
                         <p>Banks provide a limited number of complimentary ATM transactions every month, and the allowance varies based on the type of savings account selected. If the specified limit is surpassed, the bank imposes a fee on any additional transactions, both financial and non-financial. The number of free transactions and the charges di er when using another bank's ATM for withdrawals. </p>
                         <p>In June 2022, the RBI authorized banks to levy an additional charge of up to Rs. 21 per transaction at ATMs, on top of the monthly free transaction limit. According to the circular, customers were entitled to five free transactions (covering both financial and non-financial transactions) every month at their own bank's ATMs. Additionally, they were eligible for free transactions at other bank ATMs, with three transactions allowed in metro centres and five transactions in non-metro centres. </p>
@@ -44,13 +38,170 @@ export async function generateStaticParams() {
                         <p>When using ATMs of other banks in metro locations, customers receive three free transactions, after which they will be charged Rs 21/- along with applicable taxes for cash withdrawals. ICICI Bank ATM charges and fees ICICI Bank adheres to the standard 3-transaction rule in metro areas and 5-transaction rule in non-metro areas for free withdrawals, just like other banks. Beyond this limit, the bank charges Rs. 20 per financial transaction and Rs. 8.50 per non-financial transaction. </p>
                        <p>The last change in interchange fee structure for ATM transactions was in August 2012, while the charges payable by customers were last revised in August 2014. The RBI has notified the changes from January 1, 2022, citing the increasing cost of ATM deployment and expenses towards ATM maintenance incurred by banks or white-label ATM operators</p>
                     </div>
-      `
-     },
+      `,
+    },
+    {
+      id: 5,
+      title: "Best Personal Loan Options for All Your Needs",
+      data: ` 
+      <div class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-6">
+      Best Personal Loan Options for All Your Needs
+    </h1>
+    <div class="mb-6">
+      <img src="/personal_loan.webp" alt="Personal Loan" class="w-full h-auto rounded-lg shadow-md" />
+    </div>
+    <p class="text-lg mb-4">
+      Personal finance is extensive and covers everything from medical emergencies to dream vacations.
+    </p>
+    <p class="text-lg mb-8 ">
+      Thankfully, there are numerous personal loans today that cover all contingencies. Get meaningful insights about 5 of the best personal loan options available in India.
+    </p>
+    <div class="space-y-10">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-2xl font-semibold text-indigo-600 mb-4">
+          1. Bajaj Finserv Personal Loan (4.5/5)
+        </h4>
+        <ul class="list-disc list-inside mb-4 space-y-2">
+          <li>Swift approval and disbursement within 24 hours.</li>
+          <li>No collateral requirement for securing the loan.</li>
+          <li>Flexible repayment tenure of up to 96 months.</li>
+        </ul>
+        <p>
+          To explore the best offers from Bajaj Finserv, hit the
+          <a
+            href="http://trk.yasd.in/click?campaign_id=166&pub_id=684&source={your-sub-aff-id"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block  px-2 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+          >
+            Click Now
+          </a>
+        </p>
+      </div>
 
-     {
-      id:2,
-      title:"Credit Or Debit Card Rules: Benefits For Customers",
-      data:` <h1 class='heading-primary'>Credit/Debit Card Rules: Benefits For Customers</h1>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-2xl font-semibold text-indigo-600 mb-4">
+          2. Paisa Bazaar Personal Loan (4.7/5)
+        </h4>
+        <ul class="list-disc list-inside mb-4 space-y-2">
+          <li>Repayment period of up to 6 years.</li>
+          <li>Affordable interest rates, starting from only 10.5% per annum.</li>
+          <li>Zero hidden charges.</li>
+        </ul>
+        <p>
+          To explore the best offers from Paisa Bazaar, hit the 
+          <a
+            href="https://www.paisabazaar.com/personal-loans"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block  px-2 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+          >
+            Click Now
+          </a>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-2xl font-semibold text-indigo-600 mb-4">
+          3. Moneycontrol Personal Loan (4.2/5)
+        </h4>
+        <ul class="list-disc list-inside mb-4 space-y-2">
+          <li>Instant approval and fund transfer.</li>
+          <li>Unsecured loans, with no collateral required.</li>
+          <li>Diverse range of lenders.</li>
+        </ul>
+        <p>
+          To explore the best offers from Moneycontrol, hit the 
+          <a
+            href="https://www.moneycontrolpay.com/?sso="
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block  px-2 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+          >
+            Click Now
+          </a>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-2xl font-semibold text-indigo-600 mb-4">
+          4. Indialends Personal Loan (4.8/5)
+        </h4>
+        <ul class="list-disc list-inside mb-4 space-y-2">
+          <li>100% digital process with no paperwork required.</li>
+          <li>Loan amounts available up to Rs. 50 lakh.</li>
+          <li>Personalised and flexible EMI options.</li>
+        </ul>
+        <p>
+          To explore the best offers from Indialends, hit the 
+          <a
+            href="https://cl.adosiz.net/tracking/click/238269/5711/331310"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block  px-2 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+          >
+            Click Now
+          </a>
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-2xl font-semibold text-indigo-600 mb-4">
+          5. Flot Personal Loan (4.3/5)
+        </h4>
+        <ul class="list-disc list-inside mb-4 space-y-2">
+          <li>Direct loan disbursal.</li>
+          <li>High security features.</li>
+          <li>24/7 application window.</li>
+        </ul>
+        <p>
+          To explore the best offers from Flot, hit the 
+          <a
+            href="https://trk.clickgenie.in/click?campaign_id=35574&pub_id=4513&p1=%7Byour-transaction-id%7D&source=%7Byour-sub-aff-id%7D"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block  px-2 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+          >
+            Click Now
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-12 bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">
+        Key Factors to keep in mind while applying for a personal loan
+      </h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Before or while applying for a personal loan, there are some key factors that you should keep in mind. These include:</li>
+        <li>Documents: Some personal loans require paperwork in their application process. So ensure that all your KYC documents are in place.</li>
+        <li>Repayment Period: Select a repayment time and amount that are appropriate for your financial situation.</li>
+        <li>Lender Reputation: Consider the openness, customer service, and dependability of lenders.</li>
+        <li>Interest rates: Check and compare interest rates offered by several lenders to determine which personal loan options best meet your needs.</li>
+        <li>Terms & Conditions: Read all terms & conditions carefully to check if there are any hidden charges.</li>
+      </ul>
+    </div>
+
+    <div class="mt-12 bg-white p-6 rounded-lg shadow-md">
+      <h4 class="text-2xl font-semibold text-indigo-600 mb-4">Conclusion</h4>
+      <p class="mb-4">
+        Selecting the appropriate personal loan helps reduce financial stress by paying for both anticipated and unforeseen costs. These loan choices provide flexibility and speedy disbursement for a variety of purposes, including debt consolidation, weddings, and medical emergencies.
+      </p>
+      <p>
+        A personal loan can be a useful and empowering financial tool to help you achieve your goals if you make the correct decision. Make an informed choice and borrow money sensibly.
+      </p>
+    </div>
+  </div>
+</div>
+      `,
+    },
+
+    {
+      id: 2,
+      title: "Credit Or Debit Card Rules: Benefits For Customers",
+      data: ` <h1 class='heading-primary'>Credit/Debit Card Rules: Benefits For Customers</h1>
                   <h2  class='heading-secondary'>Change your card's network from VISA to MasterCard to RuPay or any other preferred network. Don't know How? Then check details Now. </h2>
                 
                   <div class='blog-image-container'>
@@ -76,21 +227,19 @@ export async function generateStaticParams() {
                          
                          <p>Traditionally, consumer choice in cards in India has rarely been driven by the network. The introduction of customer's priority in selecting the card network can build interest in the sector and boost competition among international and domestic network companies. With this, the cost of implementation and compliance will increase for banks.</p>
                     </div>  
-      `
-     },
+      `,
+    },
 
-     {
-      id:3,
-      title:"Here is how Govt Has Limited Gold Storage at Home",
-      data:` <h1 class='heading-primary'>Here's how Govt Has Limited Gold Storage at Home</h1>
-                
-                
+    {
+      id: 3,
+      title: "Here is how Govt Has Limited Gold Storage at Home",
+      data: ` <h1 class='heading-primary'>Here's how Govt Has Limited Gold Storage at Home</h1>
+                         
                   <div class='blog-image-container'>
                      <img src="/blog3.png" alt="" />
                    </div>
 
                    <h2  class='heading-secondary'>Know how much yellow metal you can keep at home without facing tax scrutiny and how the income from gold is taxed. </h2>
-
                     <div class='content-container'>
                         <p>Do you know how much gold you can keep at home, because the government has set a limit on this. If you're buying gold jewellery, find out how much you can keep at home without tax issues and learn about the taxation of gold income. </p>
                         <p>The government has set certain rules for how much gold or gold ornaments you can keep at home (Gold limit in India as per income tax rules). It's important for everyone to follow these rules, but many people are unaware of the specified amount of gold allowed. Let us inform you about it. </p>
@@ -109,12 +258,12 @@ export async function generateStaticParams() {
                          <p>If you sell the gold after holding it for three years or more, you'll need to pay a long-term capital gains tax at a rate of 20% on the income generated from the sale. On the other hand, if you sell the gold within three years of purchasing it, the income from the sale will be added to your total income and taxed according to the tax slab you fall under as a taxpayer. </p>
                         <p>Hence, it is important to retain sources of income from which heavy purchases of gold are made, since this could trigger queries from authorities.</p>
                     </div>   
-      `
-     },
-     {
-      id:4,
-      title:"Leading Business Loan Options for Indian Entrepreneurs in 2025",
-      data:`
+      `,
+    },
+    {
+      id: 4,
+      title: "Leading Business Loan Options for Indian Entrepreneurs in 2025",
+      data: `
                 <h1 class='heading-primary1'>Leading Business Loan Options for Indian Entrepreneurs in 2025</h1>
 
 
@@ -156,8 +305,9 @@ export async function generateStaticParams() {
                     </ul>
 
                     <p class="list-padding">
+ <strong>                       To explore the best offers from Flexiloans, Hit the
 
-                        To explore the best offers from Flexiloans, hit the
+</strong> 
 
                         <button class='custom-button'>
                             <a
@@ -211,9 +361,10 @@ export async function generateStaticParams() {
                     </ul>
 
                     <p class="list-padding">
+ <strong>                       To explore the best offers from Lendingkart, Hit the
 
-                        To explore the best offers from Lendingkart, Hit the
-
+</strong> 
+                        
                         <button class='custom-button'>
                             <a
                                 href="https://spectrum.gotrackier.com/click?campaign_id=231&pub_id=375"
@@ -273,8 +424,9 @@ export async function generateStaticParams() {
                     </ul>
 
                     <p class="list-padding">
-
-                        To explore the best offers from indifi, Hit the
+  <strong>                        To explore the best offers from indifi, Hit the
+</strong> 
+                       
 
                         <button class='custom-button'>
                             <a
@@ -326,8 +478,9 @@ export async function generateStaticParams() {
                     </ul>
 
                     <p class="list-padding">
-
-                        To explore the best offers from Tata Capital, Hit the
+                                                       <strong>                           To explore the best offers from Tata Capital, Hit the
+</strong> 
+  
 
                         <button class='custom-button'>
                             <a
@@ -392,14 +545,10 @@ export async function generateStaticParams() {
                     </ul>
 
                     <p class="list-padding">
-
-                        To explore the best offers from IIFL, Hit the
-
+                                <strong>   To explore the best offers from IIFL, Hit the</strong> 
                         <button class='custom-button'>
                             <a
-                                href="https://trackback.gotrackier.com/click?campaign_id=31167&pub_id=769&p1={your-transaction-id}&source={your-sub-aff-id}
-
-"
+                                href="https://trackback.gotrackier.com/click?campaign_id=31167&pub_id=769&p1={your-transaction-id}&source={your-sub-aff-id}"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="custom-link "
@@ -482,42 +631,28 @@ export async function generateStaticParams() {
 
 
                 </div>
-`
+`,
+    },
+  
+  ];
 
-     }
+  let filterdata = [];
 
-
-  ]
-
-
-
-
- let filterdata = [];
-
-  if(text){
-     filterdata =  data.filter((item) => {
-
+  if (text) {
+    filterdata = data.filter((item) => {
       // console.log(item?.title?.toLowerCase())
       return item?.title?.toLowerCase() === text?.toLowerCase();
     });
 
-//   console.log("filterdata",filterdata)
-//   console.log(text)
+    //   console.log("filterdata",filterdata)
+    //   console.log(text)
   }
 
-  
-  
-
-  
-
- 
   return (
     <div>
-
-      
-        <Article data={filterdata[0]}/>
+      <Article data={filterdata[0]} />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
