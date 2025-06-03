@@ -29,6 +29,7 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: './',
     },
+    
     };
   } catch (error) {
     return {

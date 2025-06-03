@@ -1,9 +1,10 @@
 
 import { Blog } from "@/components/blog/Blog"
 const page = () => {
+
   return (
     <div>
-        <Blog  url="blogs"/>
+        <Blog url="real-estate"/>
     </div>
   )
 }

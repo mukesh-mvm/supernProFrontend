@@ -29,6 +29,7 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: './',
     },
+    
     };
   } catch (error) {
     return {
@@ -39,8 +40,6 @@ export async function generateMetadata({ params }) {
 }
 const page = async ({ params }) => {
   const { slugName } =await params;
-  console.log("slugname---",      `${base_url}/api/blog/getOneBlogByslug/${slugName}`
-)
 
   try {
     const response = await axios.get(

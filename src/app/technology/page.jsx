@@ -2,11 +2,9 @@
 import { Blog } from "@/components/blog/Blog"
 const page = () => {
 
-
-
   return (
     <div>
-        <Blog url="finance"/>
+        <Blog url="technology"/>
     </div>
   )
 }

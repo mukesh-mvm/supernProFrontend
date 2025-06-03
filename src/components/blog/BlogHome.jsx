@@ -1,9 +1,27 @@
-import React from "react";
+'use client'
+import React,{useState,useEffect} from "react";
 import { LeftSidebar } from "./LeftSifebar";
 import { RightSide } from "./RightSide";
 import Link from "next/link";
+import axios from "axios";
+import { base_url } from "../Helper/helper";
 
-export const BlogHome = ({ url, cards }) => {
+export const BlogHome = ({ url }) => {
+
+   const [cards,setCards] = useState();
+      const fetchdata  = (async()=>{
+         try {
+            const data =await axios.get(`${base_url}/api/blog/getOneBlogCategoryslug/${url}`)
+            setCards(data.data)
+            console.log(data.data)
+         } catch (error) {
+             console.log(error)
+         }
+      })
+
+      useEffect(()=>{
+           fetchdata()
+      },[])
 
 
   return (
@@ -23,16 +41,13 @@ export const BlogHome = ({ url, cards }) => {
             className="bg-[#f4f4f5] border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-transform duration-300 hover:scale-[1.03]"
           >
             <img
-              src={card.image}
+              src={`${base_url}${card.image}`}
               alt={card.title}
               className="w-full h-48 object-cover rounded-t-xl"
             />
             <div className="p-2 text-center">
               <Link
-                href={`/${url}/${card.title
-                  .toLowerCase()
-                  .replace(/ /g, "-")
-                  .replace(/:/g, "_")}`}
+                href={`${card?.category?.slug}/${card?.slug}`}
                 className="text-md font-semibold text-[#091057] hover:text-[#313561] transition-colors duration-200"
               >
                 {card.title}

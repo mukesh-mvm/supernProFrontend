@@ -3,48 +3,55 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-8 mt-10 md:pl-10">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-        {/* Left Section - Logo and Address */}
+    <footer className="bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        {/* Logo & Contact */}
         <div>
-          <Link href="/" className="text-white text-2xl font-bold hover:text-gray-200">
-          <img src="/Supoernprop Logo1.png" alt="logo" className='h-[60px]'/>
-        </Link>
-          <p className="text-white text-sm mt-2">123 Business Street, City, Country</p>
-          <p className=" text-white text-sm">Email: contact@yourcompany.com</p>
-          <p className="text-white text-sm">Phone: +123 456 7890</p>
+          <Link href="/" className="inline-block mb-4">
+            <img src="/Supoernprop Logo1.png" alt="logo" className="h-14" />
+          </Link>
+          <p className="text-sm text-gray-400">123 Business Street, City, Country</p>
+          <p className="text-sm text-gray-400 mt-1">Email: contact@yourcompany.com</p>
+          <p className="text-sm text-gray-400 mt-1">Phone: +123 456 7890</p>
         </div>
-        
 
-
-
-        
-
-        {/* Middle Section - Quick Links */}
-        <div  className=" md:pl-28 md:flex md:flex-col md:justify-center"> 
-          <h4 className="text-lg font-semibold">Quick Links</h4>
-          <ul className="mt-2 space-y-2">
-            <li><a href="/" className="text-white hover:underline">Home</a></li>
-            <li><a href="#" className="text-white hover:underline">News</a></li>
-            <li><a href="#" className="text-white hover:underline">India Global</a></li>
-            <li><a href="#" className="text-white hover:underline">Politics</a></li>
-            <li><a href="#" className="text-white hover:underline">Finance</a></li>
-            <li><a href="#" className="text-white hover:underline">Automobile</a></li>
-            <li><a href="#" className="text-white hover:underline">Real State</a></li>
-            <li><a href="#" className="text-white hover:underline">Fashion & Lifestyle</a></li>
-            <li><a href="#" className="text-white hover:underline">Sports</a></li>
+        {/* Quick Links Column 1 */}
+        <div>
+          <h4 className="text-lg font-semibold mb-3">Quick Links</h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li><Link href="/" className="hover:text-white">Home</Link></li>
+            <li><Link href="#" className="hover:text-white">News</Link></li>
+            <li><Link href="#" className="hover:text-white">India Global</Link></li>
+            <li><Link href="#" className="hover:text-white">Politics</Link></li>
           </ul>
         </div>
-        
-        {/* Right Section - Social Media Icons */}
-        <div className=" md:flex md:flex-col md:items-center">
-          <h4 className="text-lg font-semibold">Follow Us</h4>
-          <div className="flex justify-center md:justify-start space-x-4 mt-2">
-            <a href="#" className="text-white hover:text-gray-400"><FaFacebook size={30} /></a>
-            <a href="#" className="text-white hover:text-gray-400"><FaTwitter size={30} /></a>
-            <a href="#" className="text-white hover:text-gray-400"><FaInstagram size={30} /></a>
+
+        {/* Quick Links Column 2 */}
+        <div>
+          <h4 className="text-lg font-semibold mb-3 invisible md:visible">&nbsp;</h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li><Link href="#" className="hover:text-white">Finance</Link></li>
+            <li><Link href="#" className="hover:text-white">Automobile</Link></li>
+            <li><Link href="#" className="hover:text-white">Real Estate</Link></li>
+            <li><Link href="#" className="hover:text-white">Fashion & Lifestyle</Link></li>
+            <li><Link href="#" className="hover:text-white">Sports</Link></li>
+          </ul>
+        </div>
+
+        {/* Social Media */}
+        <div>
+          <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:text-gray-300"><FaFacebook size={24} /></a>
+            <a href="#" className="hover:text-gray-300"><FaTwitter size={24} /></a>
+            <a href="#" className="hover:text-gray-300"><FaInstagram size={24} /></a>
           </div>
         </div>
+      </div>
+
+      {/* Bottom Footer */}
+      <div className="border-t border-gray-800 py-4 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} SUPERNPRO. All rights reserved.
       </div>
     </footer>
   );
